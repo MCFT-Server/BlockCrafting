@@ -1,0 +1,27 @@
+name: BlockCrafting
+main: blockcrafting.Main
+version: "1.0.0"
+author: maru
+api: ["1.0.0"]
+
+commands:
+ blcraft:
+  usage: "/blcraft <add|delete|list>"
+  description: "It block craft item"
+  permission: blockcrafting.commands.*
+
+permissions:
+ blockcrafting.*:
+  default: true
+  children:
+   blockcrafting.commands.*:
+    default: true
+    children:
+     blockcrafting.commands.add:
+      default: OP
+     blockcrafting.commands.delete:
+      default: OP
+     blockcrafting.commands.list:
+      default: true
+   blockcrafting.craft:
+    default: OP
