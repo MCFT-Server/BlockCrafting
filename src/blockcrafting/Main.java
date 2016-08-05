@@ -9,6 +9,7 @@ import cn.nukkit.command.CommandSender;
 import cn.nukkit.event.*;
 import cn.nukkit.event.inventory.CraftItemEvent;
 import cn.nukkit.item.Item;
+import cn.nukkit.lang.TranslationContainer;
 
 public class Main extends PluginBase implements Listener{
 	private Config banDB;
